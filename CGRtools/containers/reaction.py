@@ -27,10 +27,11 @@ from .cgr import CGRContainer
 from .common import Graph
 from .molecule import MoleculeContainer
 from .query import QueryContainer
+from ..algorithms.balance import Balance
 from ..algorithms.depict import DepictReaction
 
 
-class ReactionContainer(DepictReaction):
+class ReactionContainer(DepictReaction, Balance):
     """
     reaction storage. contains reactants, products and reagents lists.
 
